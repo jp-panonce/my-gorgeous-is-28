@@ -74,20 +74,18 @@ const animationTimeline = () => {
         opacity: 0,
         rotation: 360,
     })
-    .to(".third",
-        0.7,
-        {
+    .to(".third", 0.7, {
             opacity: 0,
-            y: 10
+            // y: 10
         },
-    "+=3")
-     .to(".third", 0.1, {
-         display: "none"
-    })
+    "+=2")
     .to(".fourth", 0.7, {
             opacity: 0,
         }, "+=2"
     )
+    .to(".third", 0.1, {
+         display: "none"
+    })
     .to(".fourth", 0.1, {
         display: "none"
     })
@@ -124,7 +122,7 @@ const animationTimeline = () => {
         y: 10,
         visibility: "visible"
     })
-    .from(".eigth", 0.6, {
+    .from(".eigth", 0.5, {
         scale: 0.2,
         opacity: 0,
         visibility: "visible"
@@ -138,7 +136,7 @@ const animationTimeline = () => {
     })
     .to(".eigth", 0.7, {
             opacity: 0,
-        }, "+=2"
+        }, "+=1"
     )
     .to(".eigth", 0.1, {
         display: "none"
@@ -160,8 +158,15 @@ const animationTimeline = () => {
         opacity: 0
     })
     .to(".tenth", 0.7, {
+            opacity: 0,
+            // y: 10,
+        }, "+=3"
+    )
+    .to(".tenth", 0.7, {
         display: "none"
     })
+
+
     .from(".eleven", 0.7, {
         opacity: 0
     })
@@ -174,16 +179,26 @@ const animationTimeline = () => {
             // y: 10,
         }, "+=3"
     )
+    .to(".twelve", 0.7, {
+            opacity: 0,
+            // y: 10,
+        }, "+=3"
+    )
     .to(".eleven", 0.1, {
         display: "none"
     })
     .to(".twelve", 0.7, {
         display: "none"
     })
+
+    // Final Happy Birthday
     .from(".thirteen", 0.7, {
         opacity: 0,
-        y: 10
     })
+    .from(".fourteen", 1, {
+        opacity: 0
+    })
+
     
     // Restart Animation on click
     // const replyBtn = document.getElementById("replay");

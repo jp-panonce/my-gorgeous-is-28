@@ -121,7 +121,7 @@
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
-  height: 80%;
+  /* height: 80%; */
 }
 
 .main_feature img {
@@ -134,15 +134,17 @@
 
 .main_caption {
   font-family:  'Poppins', sans-serif;
-  font-size: 5rem;
+  font-size: 7rem;
   font-style: italic;
   color: white;
   text-align: center;
+  transform: translate(0, -50%);
 }
 
 .sub_caption {
   font-family:  'Poppins', sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  padding-bottom: 10px;
   font-style: italic;
   color: white;
   text-align: center;
