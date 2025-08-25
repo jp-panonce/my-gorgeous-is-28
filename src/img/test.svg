@@ -1,0 +1,22 @@
+<svg role="img" style="width:100%;height:auto;" width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>
+		Image of the Moon phase on
+		<!-- ?= August 26, 1997 ? -->
+		, with indication of prominent lunar features visible today
+	</title>
+	<desc>
+	</desc>
+	<defs>
+		<clipPath id="moonClipPath_8b27814cec">
+			<circle cx="512" cy="512" r="512">
+			</circle>
+		</clipPath>
+		<filter id="blurFilterId_8b27814cec">
+			<feGaussianBlur stdDeviation="15.293">
+			</feGaussianBlur>
+		</filter>
+	</defs>
+	<image href="./	moon_full_disk_1024.png" x="0" y="0" width="1024" height="1024"  clip-path="url(#moonClipPath_8b27814cec)"></image>
+	<path d="M 512,0 A 107.853,512 0 1 0 512,1024 L 512,2048 L 2048,2048 L 2048,-1024 L 512,-1024 L 512,0 Z" fill="rgba(0,0,0,.9)" clip-path="url(#moonClipPath_8b27814cec)" filter="url(#blurFilterId_8b27814cec)"> -->
+	</path>
+</svg>

@@ -1,0 +1,284 @@
+
+
+.night {
+  background: -webkit-linear-gradient(top, rgb(0, 0, 0) 50%, rgb(25, 19, 39)80%, rgb(43, 32, 72));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.constelacao {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  animation: rotate 600s infinite linear;
+}
+
+.estrela {
+  background-color: rgb(146, 146, 146);
+  border-radius: 50%;
+  position: absolute;
+  animation-name: estrela;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.estrela.style1 { animation-duration: 0.5s; animation-name: estrela; }
+.estrela.style2 { animation-duration: 1s; animation-name: estrela; }
+.estrela.style3 { animation-duration: 1.5s; animation-name: estrela; }
+.estrela.style4 { animation-duration: 2s; animation-name: estrelaDestacada; }
+
+.estrela.tam1 { width: 1px; height: 1px; }
+.estrela.tam2 { width: 2px; height: 2px; }
+.estrela.tam3 { width: 3px; height: 3px; }
+
+.estrela.opacity1 { opacity:  1; }
+.estrela.opacity2 { opacity: .5; }
+.estrela.opacity3 { opacity: .1; }
+
+.meteor {
+  position: absolute;
+  background-color: #fff;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  transform: rotate(-35deg);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+.meteor:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 0;
+  height: 0;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-left: 85px solid white;
+  position: absolute;
+  left: 2px;
+  top: 0;
+}
+
+.meteor.style1 { animation-name: meteorStyle1; }
+.meteor.style2 { animation-name: meteorStyle2; }
+.meteor.style3 { animation-name: meteorStyle3; }
+.meteor.style4 { animation-name: meteorStyle4; }
+
+.lua {
+  position: fixed;
+  /* right: 50%; */
+  top: 150px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%; 
+  box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+  background-color: #ffffff56;
+  animation-name: lua;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+}
+
+.lua .textura {
+  background-image: url(../img/moon.png);
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 30%;
+  overflow: hidden;
+  opacity: 0.8;
+}
+
+/* FOREST BACKDROP */
+.floresta {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.floresta img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/*MAIN FEATURE*/
+.main_feature {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80%;
+}
+
+.main_feature img {
+  position: fixed;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main_caption {
+  font-family:  'Poppins', sans-serif;
+  font-size: 5rem;
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+
+.sub_caption {
+  font-family:  'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+
+@keyframes escurecer {
+  0%   { top: 0; }
+  100% { top: 100%; }
+}
+
+@keyframes estrela {
+  0% {
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+  }
+  50% {
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.05);
+  }
+}
+
+@keyframes estrelaDestacada {
+  0% {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 1);
+  }
+  20% {
+    background-color: #FFC4C4;
+    box-shadow: 0 0 10px 0px rgb(255, 196, 196, 1);
+  }
+  80% {
+    background-color: #C4CFFF;
+    box-shadow: 0 0 10px 0px rgb(196, 207, 255, 1);
+  }
+  100% {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px 0px rgba(255, 255, 255, 0.2);
+  }
+}
+
+@keyframes meteorStyle1 {
+  0% { opacity: 0; right: 300px; top: 100px; }
+  30% { opacity: .3; }
+  60% { opacity: .3; }
+  100% { opacity: 0; right: 1000px; top: 600px; }
+}
+
+@keyframes meteorStyle2 {
+  0% { opacity: 0; right: 700px; top: 100px; }
+  30% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { opacity: 0; right: 1400px; top: 600px; }
+}
+
+@keyframes meteorStyle3 {
+  0% { opacity: 0; right: 300px; top: 300px; }
+  30% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { opacity: 0; right: 1000px; top: 800px; }
+}
+
+@keyframes meteorStyle4 {
+  0% { opacity: 0; right: 700px; top: 300px; }
+  30% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { opacity: 0; right: 1400px; top: 800px; }
+}
+
+@keyframes lua {
+  0%{
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+  50% {
+    box-shadow: 0 0 80px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+  100% {
+    box-shadow: 0 0 160px 0px #fff, 0 0 30px -4px #fff, 0 0 8px 2px rgba(255, 255, 255, 0.26);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+/* BUTTON */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
