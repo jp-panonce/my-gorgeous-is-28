@@ -196,14 +196,7 @@ const animationTimeline = () => {
         opacity: 0,
     })
     .from(".fourteen", 1, {
-        opacity: 0
+        opacity: 0,
+        visibility: "visible"
     })
-
-    
-    // Restart Animation on click
-    // const replyBtn = document.getElementById("replay");
-    // replyBtn.addEventListener("click", () => {
-    //     tl.restart();
-    //     // document.querySelector('.song').play();
-    // });
 }
