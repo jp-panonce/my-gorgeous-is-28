@@ -131,13 +131,13 @@ const animationTimeline = () => {
             opacity: 0,
         }, "+=2"
     )
-    .to(".seventh", 0.1, {
-        display: "none"
-    })
     .to(".eigth", 0.7, {
             opacity: 0,
         }, "+=1"
     )
+    .to(".seventh", 0.1, {
+        display: "none"
+    })
     .to(".eigth", 0.1, {
         display: "none"
     })
