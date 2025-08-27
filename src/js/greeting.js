@@ -1,4 +1,10 @@
 window.addEventListener('load', () => {
+    window.sounds = new Object();
+    var sound = new Audio('src/audio/happy_bday_harp.mp3');
+    sound.load();
+    // window.sounds['happy_bday_harp.mp3'] = sound;
+    sound.play();
+
     // document.querySelector('.song').play();
     animationTimeline();
 });
