@@ -159,17 +159,17 @@ const animationTimeline = () => {
         display: "none"
     })
 
-    .from(".ninth", 0.7, {
-        opacity: 0
-    })
-    .to(".ninth", 0.7, {
-            opacity: 0,
-            // y: 10,
-        }, "+=3"
-    )
-    .to(".ninth", 0.1, {
-        display: "none"
-    })
+    // .from(".ninth", 0.7, {
+    //     opacity: 0
+    // })
+    // .to(".ninth", 0.7, {
+    //         opacity: 0,
+    //         // y: 10,
+    //     }, "+=3"
+    // )
+    // .to(".ninth", 0.1, {
+    //     display: "none"
+    // })
 
     .from(".tenth", 0.7, {
         opacity: 0
