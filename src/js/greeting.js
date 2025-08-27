@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    document.querySelector('.song').play();
+    // document.querySelector('.song').play();
     animationTimeline();
 });
 
@@ -7,12 +7,12 @@ window.addEventListener('load', () => {
 // animation timeline
 const animationTimeline = () => {
     // split chars that needs to be animated individually
-    const textBoxChars = document.getElementsByClassName("first")[0];
+    // const textBoxChars = document.getElementsByClassName("first")[0];
     // const hbd = document.getElementsByClassName("wish-hbd")[0];
 
-    textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
-        .split("")
-        .join("</span><span>")}</span>`;
+    // textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
+    //     .split("")
+    //     .join("</span><span>")}</span>`;
 
     // hbd.innerHTML = `<span>${hbd.innerHTML
     //     .split("")
@@ -63,19 +63,21 @@ const animationTimeline = () => {
         display: "none"
     })
 
+
+
     //the sky looked like this .....
     .from(".third", 0.7, {
         opacity: 0,
         y: 10
     })
     
-    .from(".fourth", 1, {
+    .from(".fourth", 4, {
         // scale: 0.2,
         opacity: 0,
-        rotation: 360,
+        rotation: 180,
     })
     .to(".third", 0.7, {
-            opacity: 0,
+            opacity: 0
             // y: 10
         },
     "+=2")
@@ -86,10 +88,6 @@ const animationTimeline = () => {
     .to(".third", 0.1, {
          display: "none"
     })
-    .to(".fourth", 0.1, {
-        display: "none"
-    })
-
     .from(".fifth", 0.7, {
         opacity: 0,
         y: 10
@@ -98,6 +96,12 @@ const animationTimeline = () => {
         scale: 0.2,
         opacity: 0,
     })
+    .to(".fourth", 0.1, {
+        display: "none"
+    })
+
+
+    
     .to(".fifth",
         0.7,
         {
@@ -139,6 +143,19 @@ const animationTimeline = () => {
         display: "none"
     })
     .to(".eigth", 0.1, {
+        display: "none"
+    })
+
+    .from(".second-next", 2, {
+        opacity: 0,
+        y: 10
+    })
+    .to(".second-next", 0.7, {
+            opacity: 0,
+            y: 10,
+        }, "+=3.5"
+    )
+    .to(".second-next", 0.1, {
         display: "none"
     })
 
